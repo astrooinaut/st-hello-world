@@ -13,7 +13,7 @@ import pandas as pd
 st.title("Researcher Profile Page")
 
 st.image("https://media.geeksforgeeks.org/wp-content/uploads/20231130180326/Physiology.webp",
-        width=150)
+        width=300)
 
 # Collect basic information
 name = "Donavan Rooi"
