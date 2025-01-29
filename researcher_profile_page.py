@@ -22,9 +22,6 @@ research_biography= "Donavan's specific interests include large artery stiffness
 
 # Display basic profile information
 st.header("Researcher Overview")
-st.image("/Users/donavanrooi/Downloads/B6F1613F-7294-42DF-983C-ED8A37493DDE_1_201_a.jpeg",
-         caption="Donavan Rooi",
-         width=300)
 st.write(f"**Field of Research:** {field}")
 st.write(f"**Institution:** {institution}")
 st.write(f"**Research interest** {research_biography}")
