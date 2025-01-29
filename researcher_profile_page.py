@@ -23,6 +23,7 @@ research_biography= "Donavan's specific interests include large artery stiffness
 
 # Display basic profile information
 st.header("Researcher Overview")
+st.write(f"**Name:** {name}")
 st.write(f"**Field of Research:** {field}")
 st.write(f"**Institution:** {institution}")
 st.write(f"**Research interest** {research_biography}")
