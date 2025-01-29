@@ -12,7 +12,7 @@ import pandas as pd
 # Title of the app
 st.title("Researcher Profile Page")
 
-st.image("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.geeksforgeeks.org%2Fphysiology%2F&psig=AOvVaw0qkv_2Ef27eIlnRZD-9y2G&ust=1738238692758000&source=images&cd=vfe&opi=89978449&ved=0CBgQ3YkBahcKEwjAmK7w8ZqLAxUAAAAAHQAAAAAQBA",
+st.image("https://media.geeksforgeeks.org/wp-content/uploads/20231130180326/Physiology.webp",
         width=150)
 
 # Collect basic information
