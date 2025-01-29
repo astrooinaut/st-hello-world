@@ -28,10 +28,32 @@ st.write(f"**Institution:** {institution}")
 st.write(f"**Research interest** {research_biography}")
 
 # Add a section for publications
-st.header("Publication Trends")
-st.image("https://github.com/astrooinaut/st-hello-world/blob/36fc9ad1b55973a64189d7c460f8eb1cdb1d49d2/visualization.png"
-         , width=500)
+st.header("Publications")
+uploaded_file = st.file_uploader("Upload a CSV of Publications", type="csv")
 
+if uploaded_file:
+    publications = pd.read_csv(uploaded_file)
+    st.dataframe(publications)
+
+    # Add filtering for year or keyword
+    keyword = st.text_input("Filter by keyword", "")
+    if keyword:
+        filtered = publications[
+            publications.apply(lambda row: keyword.lower() in row.astype(str).str.lower().values, axis=1)
+        ]
+        st.write(f"Filtered Results for '{keyword}':")
+        st.dataframe(filtered)
+    else:
+        st.write("Showing all publications")
+
+# Add a section for visualizing publication trends
+st.header("Publication Trends")
+if uploaded_file:
+    if "Year" in publications.columns:
+        year_counts = publications["Year"].value_counts().sort_index()
+        st.bar_chart(year_counts)
+    else:
+        st.write("The CSV does not have a 'Year' column to visualize trends.")
 
 # Add STEM Data Section
 st.header("Explore STEM Data")
