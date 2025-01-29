@@ -29,7 +29,7 @@ st.write(f"**Research interest** {research_biography}")
 
 # Add a section for publications
 st.header("Publication Trends")
-st.image("https://github.com/astrooinaut/st-hello-world#:~:text=4%20minutes%20ago-,visualization.png,-Add%20files%20via"
+st.image("https://github.com/astrooinaut/st-hello-world/blob/36fc9ad1b55973a64189d7c460f8eb1cdb1d49d2/visualization.png"
          , width=500)
 
 
